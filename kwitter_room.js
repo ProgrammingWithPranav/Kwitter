@@ -51,3 +51,9 @@ function roomNameClick(roomName) {
   window.location = "room_page.html";
 }
 getData();
+
+function logout(){
+  localStorage.removeItem("username");
+  localStorage.removeItem("roomName");
+  window.location = "index.html";
+}
